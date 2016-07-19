@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> FCC- Random Quote Machine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css">
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item" id="weatherbox">
+            <div id="cityandstate"> </div>
+    <br>
+            <div id="templine">
+                <div id="currenttempfahr"></div>
+                <div id="currenttempcels"></div>
+                <div id="temptype"> &deg;F</div>
+                <div id="separator"> |</div>
+                <div id="switchlink"> &deg;C</div>
+            </div>
+            <div id="summary"></div>
+            <br>
+            <br>
+            <div id="copyright">
+                <div>Local Weather App by <a href="https://codepen.io/pdey" target="_blank">Piyali Dey</a></div>
+            <div>Powered by <a href="https://developer.forecast.io/" target="_blank">Forecast.io</a></div>
+            </div>
+     </div>
+</div>
+
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+  <script src="script.js"></script>
+</body>
+</html>
