@@ -7,23 +7,32 @@ $(function() {
     if (!$('ul').empty()) {
       $('ul').empty();
     }
-
+    // use ajax to handle things
     $.ajax({
-      url: 'https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=' + value + '&srnamespace=0&srinfo=suggestion&srprop=snippet&srlimit=10&callback=?',
+      url: 'https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=' 
+                              + value + '&srnamespace=0&srinfo=suggestion& srprop=snippet&srlimit=10&callback=?',
       dataType: 'jsonp',
       type: 'get',
       headers: {
         'Api-User-Agent': 'Example/1.0'
       },
     }).done(function(data) {
+      // clear the children from our class to make sure that no previous results are being displayed.
       $('.results').empty();
+
+      // store the new information in an array
       var resultsArr = data.query.search;
+
+      // for each result generate the html result
       resultsArr.forEach(function(item) {
         title = item.title;
         summary = item.snippet;
         link = 'https://en.wikipedia.org/wiki/' + encodeURIComponent(title);
 
-        var resultItem = '<a href="' + link + '" ><div class="result-item animated bounceInUp"><h3 class="item-title">' + title + '</h3><p class="item-summary">' + summary + '</p></div></a>';
+        var resultItem = '<a href="' + link + '" ><div class="result-item animated bounceInUp"><h3 class="item-title">' + title 
+                                      + '</h3><p class="item-summary">' + summary + '</p></div></a>';
+        
+        // display the elements to the page
         $('.results').append(resultItem);
         $('.search-input').blur();
 
@@ -87,6 +96,7 @@ $(function() {
     }
   })
 
+ // create random links 
   $('.surprise').on('click', function() {
     var random = Math.floor(Math.random() * (122 - 97 + 1)) + 97;
     var letter = String.fromCharCode(random);
