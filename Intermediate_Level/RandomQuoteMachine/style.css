@@ -1,0 +1,21 @@
+body {
+background-color:green;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.quoteWell {
+    margin-top: 90px;
+}
+.fa-quote-left {
+    color: #444;
+    background: #eee;
+    border: 2px solid #ccc;
+    padding: 10px 12px;
+    border-radius: 100%;
+    position: absolute;
+    top: 45px;
+    left: 42%;
+}
