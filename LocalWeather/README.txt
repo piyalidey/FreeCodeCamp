@@ -1,6 +1,12 @@
 
-This is an app to show Local weather in your browser. A Pen created at CodePen.io. 
-You can find this one at http://codepen.io/pdey/full/vKdbmN/.
+Local Weather App
+
+User Stories:
+1. I can see the weather in my current location.
+2. I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.
+3. I can push a button to toggle between Fahrenheit and Celsius.
+
+A Pen created at CodePen at http://codepen.io/pdey/full/vKdbmN/.
 
 The Weather App that changes background according to the temperature and that lets you choose between Imperial and Metric 
 systems. It uses the following APIs.
