@@ -63,16 +63,6 @@ button:active {
   box-shadow: none;
 }
 
-.row {
-  margin-top: 20px
-}
-
-#topAdjust {
-  margin-top: -52px;
-}
-
-
-
 .red {
   font-size: 14px;
   background-color: #a72d45;

@@ -29,7 +29,6 @@ $(document).ready(function() {
   }
 
   $('button').click(function() {
-
     entry = $(this).attr("value");
     console.log('entry: ' + entry);
 
