@@ -18,4 +18,4 @@ https://s3.amazonaws.com/freecodecamp/simonSound2.mp3,
 https://s3.amazonaws.com/freecodecamp/simonSound3.mp3, 
 https://s3.amazonaws.com/freecodecamp/simonSound4.mp3.
 
-A Codepen can be found at: 
+A Codepen can be found at: http://codepen.io/pdey/full/WxmpoN/
