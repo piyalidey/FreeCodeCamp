@@ -288,7 +288,7 @@ $(function() {
   }
 
   /** Logic to place AI marker */
-  function takeAiTurn() {
+  function                           () {
     var chosenSpot;
     // start in a random corner
     if (turn === 1) {
