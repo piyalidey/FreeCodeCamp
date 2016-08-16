@@ -1,4 +1,4 @@
-Online Tic-Tac Toe
+Play Tic-Tac Toe with AI
 
 User Stories:
 
